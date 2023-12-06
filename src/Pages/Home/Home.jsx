@@ -1,4 +1,5 @@
 import HeroSection from '../../Components/HeroSection/HeroSection'
+import { ViewProjects } from '../../Components/ViewProjects/ViewProjects'
 import './Home.scss'
 
 export const Home = () => {
@@ -6,6 +7,8 @@ export const Home = () => {
         <div className="home">
             {/* <p>hey yoo</p> */}
             <HeroSection />
+
+            <ViewProjects />
 
             <div className="test"></div>
 
