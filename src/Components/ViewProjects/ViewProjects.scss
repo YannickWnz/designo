@@ -1,0 +1,229 @@
+@import '/src/Components/Utilities/utilities';
+
+.view-projects {
+    width: 100%;
+    min-height: 640px;
+    margin-bottom: 100px;
+
+    &-container {
+        width: 100%;
+        max-width: 1100px;
+        min-height: inherit;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        position: relative;
+
+        // .web-design,
+        // .app-design,
+        // .graphic-design {
+
+        //     a {
+        //         width: 100%;
+        //         min-height: 100%;
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+
+
+        //         p {
+        //             color: white;
+        //             display: flex;
+        //             align-items: center;
+        //             text-decoration: none;
+        //             font-weight: 600;
+        //             letter-spacing: 5px;
+        //             font-size: .9em;
+        //             z-index: 4;
+    
+        //             span {
+        //                 color: $peach;
+        //                 margin-bottom: -5px;
+        //                 font-size: 1em;
+        //                 margin-left: 10px;
+        //                 font-weight: bold;
+        //             }
+        //         }
+
+        //     }
+        // }
+
+        // div {
+        //     border-radius: 18px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+        //     color: white;
+        //     overflow: hidden;
+
+        //     h1 {
+        //         font-size: 2.5em;
+        //         z-index: 4;
+        //     }
+
+        //     a {
+        //         color: white;
+        //         display: flex;
+        //         align-items: center;
+        //         text-decoration: none;
+        //         font-weight: 600;
+        //         letter-spacing: 5px;
+        //         font-size: .9em;
+        //         z-index: 4;
+
+        //         span {
+        //             color: $peach;
+        //             margin-bottom: -5px;
+        //             font-size: 1em;
+        //             margin-left: 10px;
+        //             font-weight: bold;
+        //         }
+        //     }
+
+        // }
+        
+        .web-design {
+            grid-row-start: 1;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-image: url('../../../public/assets/home/desktop/image-web-design-large.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            background-blend-mode: overlay;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 4;
+
+            .hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $light-peach;
+                opacity: .8;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+
+            a {
+                width: 100%;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                p {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 5px;
+                    font-size: .9em;
+                    z-index: 4;
+    
+                    span {
+                        color: $peach;
+                        margin-bottom: -5px;
+                        font-size: 1em;
+                        margin-left: 10px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+
+        }
+        
+        .app-design {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            background-image: url('../../../public/assets/home/desktop/image-app-design.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            background-blend-mode: overlay;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            a {
+                width: 100%;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                p {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 5px;
+                    font-size: .9em;
+                    z-index: 4;
+    
+                    span {
+                        color: $peach;
+                        margin-bottom: -5px;
+                        font-size: 1em;
+                        margin-left: 10px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+        
+        .graphic-design {
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            background-image: url('../../../public/assets/home/desktop/image-graphic-design.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            background-blend-mode: overlay;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            a {
+                width: 100%;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                p {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 5px;
+                    font-size: .9em;
+                    z-index: 4;
+    
+                    span {
+                        color: $peach;
+                        margin-bottom: -5px;
+                        font-size: 1em;
+                        margin-left: 10px;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+
+}
