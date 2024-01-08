@@ -50,40 +50,41 @@
         //     }
         // }
 
-        // div {
-        //     border-radius: 18px;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     justify-content: center;
-        //     color: white;
-        //     overflow: hidden;
+        div {
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
 
-        //     h1 {
-        //         font-size: 2.5em;
-        //         z-index: 4;
-        //     }
+            h1 {
+                font-size: 2.5em;
+                z-index: 4;
+            }
 
-        //     a {
-        //         color: white;
-        //         display: flex;
-        //         align-items: center;
-        //         text-decoration: none;
-        //         font-weight: 600;
-        //         letter-spacing: 5px;
-        //         font-size: .9em;
-        //         z-index: 4;
+            a {
+                color: white;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 5px;
+                font-size: .9em;
+                z-index: 4;
 
-        //         span {
-        //             color: $peach;
-        //             margin-bottom: -5px;
-        //             font-size: 1em;
-        //             margin-left: 10px;
-        //             font-weight: bold;
-        //         }
-        //     }
+                span {
+                    color: $peach;
+                    margin-bottom: -5px;
+                    font-size: 1em;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    transition: .4s ease-in-out;
+                }
+            }
 
-        // }
+        }
         
         .web-design {
             grid-row-start: 1;
@@ -129,7 +130,7 @@
     
                     span {
                         color: $peach;
-                        margin-bottom: -5px;
+                        margin-bottom: -3px;
                         font-size: 1em;
                         margin-left: 10px;
                         font-weight: bold;
@@ -171,7 +172,7 @@
     
                     span {
                         color: $peach;
-                        margin-bottom: -5px;
+                        margin-bottom: -3px;
                         font-size: 1em;
                         margin-left: 10px;
                         font-weight: bold;
@@ -212,7 +213,7 @@
     
                     span {
                         color: $peach;
-                        margin-bottom: -5px;
+                        margin-bottom: -3px;
                         font-size: 1em;
                         margin-left: 10px;
                         font-weight: bold;
@@ -220,6 +221,21 @@
                 }
 
             }
+        }
+
+
+        .web-design:hover,
+        .app-design:hover,
+        .graphic-design:hover {
+
+            a {
+
+                span {
+                    margin-left: 20px;
+                    transition: .4s ease-in-out;
+                }
+            }
+
         }
 
 
