@@ -5,10 +5,7 @@
     min-height: 292px;
     margin-bottom: -150px;
     z-index: 9 !important;
-    // border: 3px solid olivedrab;
-    // background-color: aquamarine;
     position: relative;
-    // transform-style: preserve-3d;
 
     
     &-container {
@@ -19,6 +16,29 @@
         background-color: $peach;
         border-radius: 15px;
         margin: auto;
-        // position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        .three-circle-pattern {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .text-contents {
+            max-width: 500px;
+            color: white;
+
+            h1 {
+                font-size: 3em;
+                margin: 0;
+                font-weight: 400;
+                max-width: 350px;
+            }
+
+        }
+
     }
 }
