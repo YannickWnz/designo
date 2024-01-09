@@ -2,8 +2,8 @@ import './Cta.scss'
 
 export const Cta = () => {
     return (
-        <div className="cta">
+        <section className="cta">
             <div className="cta-container"></div>
-        </div>
+        </section>
     )
 }
