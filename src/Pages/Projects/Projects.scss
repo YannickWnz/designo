@@ -3,14 +3,11 @@
 .projects {
     width: 100%;
     min-height: 1000px;
-    border: 2px solid blue;
-    // position: relative;
 
     &-container {
         width: 100%;
         max-width: 1100px;
         margin: auto;
-        // border: 2px solid red;
         min-height: inherit;
 
         .section-intro {
@@ -45,56 +42,13 @@
 
         }
 
-        .projects-showcase-section {
+        .project-card-section {
             width: 100%;
             min-height: 400px;
-            // border: 2px solid orange;
-            margin-top: 120px;
-
-            .project-wrapper {
-                width: 100%;
-                max-width: 350px;
-                min-height: 478px;
-                border-radius: 10px;
-                // border: 2px solid darkgoldenrod;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-
-
-                .project-img {
-                    width: 100%;
-                    flex: 2;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-
-                .project-desc {
-                    flex: 1;
-                    background-color: $light-grey;
-                    // background-color: #FDF3F0;
-                    text-align: center;
-                    padding: 30px;
-
-                    h1 {
-                        color: $peach;
-                        text-transform: capitalize;
-                        margin: 0 0 10px 0;
-                        font-size: 1.8em;
-                        font-weight: 400;
-                    }
-
-                    p {
-                        margin: 0;
-                    }
-
-                }
-
-            }
+            margin: 100px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
 
         }
 

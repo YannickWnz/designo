@@ -1,0 +1,53 @@
+@import '/src/Components/Utilities/utilities';
+
+
+
+.project-card {
+    width: 100%;
+    min-height: 400px;
+    // margin-top: 120px;
+
+    .card-wrapper {
+        width: 100%;
+        max-width: 350px;
+        min-height: 478px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+
+        .project-img {
+            width: 100%;
+            flex: 2;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .project-desc {
+            flex: 1;
+            background-color: $light-grey;
+            text-align: center;
+            padding: 30px;
+
+            h1 {
+                color: $peach;
+                text-transform: capitalize;
+                margin: 0 0 10px 0;
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+    }
+
+}

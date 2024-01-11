@@ -1,9 +1,13 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
+import { ProjectCard } from '../../Components/ProjectCard/ProjectCard'
 import './Projects.scss'
 
 export const Projects = ({ service }) => {
 
     const { project } = useParams()
+
+    const navigate = useNavigate()
+
 
     return (
         <section className="projects">
@@ -23,12 +27,9 @@ export const Projects = ({ service }) => {
 
                 </div>
 
-                <div className="projects-showcase-section">
-                    {/* <h1>this is where it goes</h1> */}
-
+                {/* <div className="projects-showcase-section">
                     <div className="project-wrapper">
                         <div className="project-img">
-                            {/* <img src="../../../public/assets/web-design/desktop/image-transfer.jpg" alt="" /> */}
                             <img src="../assets/web-design/desktop/image-transfer.jpg" alt="" />
                         </div>
                         <div className="project-desc">
@@ -36,7 +37,48 @@ export const Projects = ({ service }) => {
                             <p>A multi-carrier shipping website for ecommerce business</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                {
+                    project === 'web design' && (
+                        <div className="project-card-section">
+                            <ProjectCard  />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                        </div>
+                    )
+                }
+                {
+                    project === 'app design' && (
+                        <div className="project-card-section">
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                        </div>
+                    )
+                }
+                {
+                    project === 'graphic design' && (
+                        <div className="project-card-section">
+                            <ProjectCard />
+                            <ProjectCard />
+                            <ProjectCard />
+                        </div>
+                    )
+                }
+                {
+                    // Default case
+                    !['web design', 'app design', 'graphic design'].includes(project) && (
+                        // <p>Invalid project type</p>
+                        navigate('/')
+                    )
+                }
+
+
 
             </div>
         </section>
