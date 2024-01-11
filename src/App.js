@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import NotFound from './Components/404/NotFound';
+import { Cta } from './Components/CTA/Cta';
+import { Footer } from './Components/Footer/Footer';
 import { Navbar } from './Components/Navbar/Navbar';
 import { Contact } from './Pages/Contact/Contact';
 import { Home } from './Pages/Home/Home';
@@ -21,6 +23,10 @@ function App() {
           <Route path='/location' element={ <Locations /> }  ></Route>
           <Route path='*' element={ <NotFound /> }  ></Route>
         </Routes>
+
+        <Cta />
+        <Footer />
+
       </Router>
     </div>
   );

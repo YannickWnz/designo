@@ -15,9 +15,9 @@ export const Home = () => {
 
             <Features />
 
-            <Cta />
+            {/* <Cta /> */}
 
-            <Footer />
+            {/* <Footer /> */}
 
             {/* <div className="test"></div> */}
 
