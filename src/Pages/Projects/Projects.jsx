@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { ProjectCard } from '../../Components/ProjectCard/ProjectCard'
+import { Suggestions } from '../../Components/Suggestions/Suggestions'
 import './Projects.scss'
 
 export const Projects = ({ service }) => {
@@ -111,6 +112,7 @@ export const Projects = ({ service }) => {
                     )
                 }
 
+                <Suggestions project={project} />
 
 
             </div>

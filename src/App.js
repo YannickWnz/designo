@@ -27,7 +27,7 @@ function App() {
         <Cta />
         <Footer />
 
-        <div className="test"></div>
+        {/* <div className="test"></div> */}
 
 
       </Router>

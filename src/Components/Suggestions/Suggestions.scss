@@ -1,0 +1,116 @@
+@import '/src/Components/Utilities/utilities';
+
+
+.suggestions {
+    width: 100%;
+    min-height: 310px;
+    margin-bottom: 150px;
+
+    .suggestions-container {
+        width: 100%;
+        max-width: 1100px;
+        min-height: inherit;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        div {
+            width: 100%;
+            min-height: inherit;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+            border-radius: 10px;
+            z-index: 99;
+            padding: 0 20px;
+            box-sizing: border-box;
+
+            h1 {
+                margin: 0 0 20px 0;
+                font-size: 3em;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                font-size: .9em;
+
+                span {
+                    color: $peach;
+                    margin-bottom: -7px;
+                    font-size: 1em;
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+
+        .web-design {
+            background-image: url("../../../public/assets/home/desktop/image-web-design-large.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        }
+        .app-design {
+            background-image: url("../../../public/assets/home/desktop/image-app-design.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        }
+        .graphic-design {
+            background-image: url("../../../public/assets/home/desktop/image-graphic-design.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .suggestions {
+    
+        .suggestions-container {
+            grid-template-columns: repeat(1, 1fr);
+    
+            div {
+    
+                h1 {
+                    font-size: 2.5em;
+                }
+    
+            }
+    
+        }
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .suggestions {
+    
+        .suggestions-container {
+            grid-template-columns: repeat(1, 1fr);
+    
+            div {
+    
+                h1 {
+                    font-size: 2em;
+                }
+
+    
+    
+            }
+    
+        }
+    
+    }
+}

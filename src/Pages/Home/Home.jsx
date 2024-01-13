@@ -19,7 +19,7 @@ export const Home = () => {
 
             {/* <Footer /> */}
 
-            <div className="test"></div>
+            {/* <div className="test"></div> */}
 
         </div>
     )
