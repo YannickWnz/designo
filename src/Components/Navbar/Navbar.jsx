@@ -20,7 +20,7 @@ export const Navbar = () => {
                 </div>
                 <div className={`nav-links-wrapper ${menuIconState ? '' : 'menu-state'} `}>
                     <ul>
-                        <li><Link to='/company'>OUR COMPANY</Link></li>
+                        <li><Link to='/about'>OUR COMPANY</Link></li>
                         <li><Link to='/locations'>LOCATIONS</Link></li>
                         <li><Link to='/contact'>CONTACT</Link></li>
                     </ul>
