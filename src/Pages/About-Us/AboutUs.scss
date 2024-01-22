@@ -81,7 +81,8 @@ section.about {
             border-radius: 15px;
             display: flex;
             overflow: hidden;
-            z-index: 9 !important;
+            z-index: 5;
+            position: relative;
 
 
             .section-img {
@@ -110,8 +111,6 @@ section.about {
                     color: $peach;
                     margin: 0 0 20px 0;
                     font-size: 2em;
-                    // border: 1px solid white;
-                    // font-weight: 400;
                 }
 
                 p {

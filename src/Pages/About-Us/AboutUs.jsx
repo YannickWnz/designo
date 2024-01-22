@@ -24,6 +24,11 @@ export const AboutUs = () => {
                         <p>Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.</p>
                     </div>
                 </div>
+                <div className="locations">
+                    <div className="canada"></div>
+                    <div className="australia"></div>
+                    <div className="uk"></div>
+                </div>
             </div>
         </section>
     )
