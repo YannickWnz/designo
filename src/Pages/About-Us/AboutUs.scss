@@ -122,6 +122,149 @@ section.about {
 
         }
 
+        .locations {
+            width: 100%;
+            min-height: 300px;
+            border: 2px solid red;
+            margin-bottom: 100px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+    section.about {
+        width: 100%;
+        min-height: 600px;
+        position: relative;
+    
+        .pattern-leaf {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            z-index: 1;
+            display: none;
+        }
+    
+        .about-container {
+            width: 100%;
+            max-width: 1100px;
+            min-height: inherit;
+            margin: auto;
+            // z-index: 3;
+    
+            .intro {
+                width: 100%;
+                min-height: 480px;
+                display: flex;
+                border-radius: 15px;
+                overflow: hidden;
+                // border: 2px solid yellowgreen;
+                position: relative;
+                z-index: 5;
+    
+                .bg-pattern {
+                    position: absolute;
+                    // top: -50%;
+                    bottom: 0;
+                    left: 0;
+                    transform: rotate(45deg);
+                }
+    
+                .text-intro {
+                    width: 52%;
+                    min-height: inherit;
+                    background-color: $peach;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 80px;
+                    color: white;
+    
+                    h1 {
+                        font-size: 2em;
+                        margin: 0;
+                        // font-weight: 400;
+                    }
+    
+                    p {
+                        max-width: 450px;
+                    }
+                    
+    
+                }
+                
+                .img-intro {
+                    width: 48%;
+                    min-height: inherit;
+                    background-image: url('../../../public/assets/about/desktop/image-about-hero.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+    
+    
+            }
+    
+            .world-class-talent {
+                width: 100%;
+                min-height: 640px;
+                margin: 150px 0;
+                border-radius: 15px;
+                display: flex;
+                overflow: hidden;
+                z-index: 5;
+                position: relative;
+    
+    
+                .section-img {
+                    width: 45%;
+                    min-height: inherit;
+                    background-image: url('../../../public/assets/about/desktop/image-world-class-talent.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-size: cover; 
+                }
+    
+                .section-text {
+                    width: 55%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    // align-items: center;
+                    background-color: $light-grey;
+                    background-color: #FEF3F0;
+                    padding: 0 100px;
+                    text-align: left;
+                    // border: 1px solid red;
+    
+                    h1 {
+                        color: $peach;
+                        margin: 0 0 20px 0;
+                        font-size: 2em;
+                    }
+    
+                    p {
+                        margin: 0;
+                        max-width: 450px;
+                    }
+    
+                }
+    
+            }
+    
+            .locations {
+                width: 100%;
+                min-height: 300px;
+                border: 2px solid red;
+                margin-bottom: 100px;
+            }
+    
+        }
+    
     }
 
 }

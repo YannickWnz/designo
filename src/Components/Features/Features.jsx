@@ -4,6 +4,7 @@ export const Features = () => {
     return (
         <div className="features">
             <img src="../assets/shared/desktop/bg-pattern-leaf.svg" className='leaf-pattern' alt="" />
+            
             <div className="features-container">
                 <div className="features-wrapper">
                     <div className="feature-illustration">
