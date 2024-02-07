@@ -1,0 +1,54 @@
+@import '/src/Components/Utilities/utilities';
+
+
+section.world-class-talent {
+    width: 100%;
+    min-height: 640px;
+    margin: 150px 0;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    z-index: 5;
+    position: relative;
+
+
+    .section-img {
+        width: 45%;
+        min-height: inherit;
+        // background-image: url('../../../public/assets/about/desktop/image-world-class-talent.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: cover; 
+    }
+
+    .section-text {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // align-items: center;
+        background-color: $light-grey;
+        background-color: #FEF3F0;
+        padding: 0 100px;
+        text-align: left;
+        // border: 1px solid red;
+
+        h1 {
+            color: $peach;
+            margin: 0 0 20px 0;
+            font-size: 2em;
+        }
+
+        p {
+            margin: 0;
+            max-width: 450px;
+        }
+
+    }
+
+}
+
+.reverse-section {
+    flex-direction: row-reverse !important;
+}
