@@ -125,7 +125,7 @@ section.about {
         .locations {
             width: 100%;
             min-height: 300px;
-            border: 2px solid red;
+            // border: 2px solid red;
             margin-bottom: 100px;
             display: flex;
             justify-content: space-between;
@@ -135,7 +135,53 @@ section.about {
             .uk {
                 width: 100%;
                 max-width: calc(100% / 3.2);
-                border: 1px solid red;
+                // border: 1px solid red;
+
+                .location-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .location-illustration {
+                        display: flex;
+                        justify-content: center;
+
+                        .img-pattern {
+                            position: absolute;
+                        }
+                    }
+
+                    .location-contents {
+                        margin-top: 30px;
+                        text-align: center;
+
+                        h1 {
+                            margin-bottom: 40px;
+                            font-size: 1.5em;
+                            font-weight: normal;
+                        }
+
+
+                        a {
+                            width: 100%;
+                            max-width: 152px;
+                            text-align: center;
+                            padding: 15px;
+                            border-radius: 7px;
+                            background-color: $peach;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $white;
+                            font-weight: 600;
+                            font-size: .9em;
+                            transition: .2s ease-in-out;
+                            z-index: 9;
+                        }
+
+                    }
+                }
+
             }
 
         }

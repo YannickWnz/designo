@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import { Button } from '../../Components/Button/Button'
 import './AboutUs.scss'
 
 export const AboutUs = () => {
@@ -27,20 +29,40 @@ export const AboutUs = () => {
                 <div className="locations">
                     <div className="canada">
                         <div className="location-wrapper">
-                            <div className="location-illustration"></div>
-                            <div className="location-contents"></div>
+                            <div className="location-illustration">
+                                {/* <img src="../assets/about/desktop/bg-pattern-hero-about-desktop.svg" alt="" /> */}
+                                <img src="../assets/shared/desktop/bg-pattern-small-circle.svg" className='img-pattern' alt="" />
+                                <img src="../assets/shared/desktop/illustration-canada.svg" alt="" />
+                            </div>
+                            <div className="location-contents">
+                                <h1>CANADA</h1>
+                                <Link href="">SEE LOCATION</Link>
+                                {/* <Button btnContent='SEE LOCATION' /> */}
+                            </div>
                         </div>
                     </div>
                     <div className="australia">
                         <div className="location-wrapper">
-                            <div className="location-illustration"></div>
-                            <div className="location-contents"></div>
+                            <div className="location-illustration">
+                                <img src="../assets/shared/desktop/bg-pattern-small-circle.svg" className='img-pattern' alt="" />
+                                <img src="../assets/shared/desktop/illustration-australia.svg" alt="" />
+                            </div>
+                            <div className="location-contents">
+                                <h1>AUSTRALIA</h1>
+                                <Link to=''>SEE LOCATION</Link>
+                            </div>
                         </div>
                     </div>
                     <div className="uk">
                         <div className="location-wrapper">
-                            <div className="location-illustration"></div>
-                            <div className="location-contents"></div>
+                            <div className="location-illustration">
+                                <img src="../assets/shared/desktop/bg-pattern-small-circle.svg" className='img-pattern' alt="" />
+                                <img src="../assets/shared/desktop/illustration-united-kingdom.svg" alt="" />
+                            </div>
+                            <div className="location-contents">
+                                <h1>UNITED KINGDOM</h1>
+                                <Link to=''>SEE LOCATION</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
