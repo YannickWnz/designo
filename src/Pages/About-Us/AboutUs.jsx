@@ -25,9 +25,24 @@ export const AboutUs = () => {
                     </div>
                 </div>
                 <div className="locations">
-                    <div className="canada"></div>
-                    <div className="australia"></div>
-                    <div className="uk"></div>
+                    <div className="canada">
+                        <div className="location-wrapper">
+                            <div className="location-illustration"></div>
+                            <div className="location-contents"></div>
+                        </div>
+                    </div>
+                    <div className="australia">
+                        <div className="location-wrapper">
+                            <div className="location-illustration"></div>
+                            <div className="location-contents"></div>
+                        </div>
+                    </div>
+                    <div className="uk">
+                        <div className="location-wrapper">
+                            <div className="location-illustration"></div>
+                            <div className="location-contents"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

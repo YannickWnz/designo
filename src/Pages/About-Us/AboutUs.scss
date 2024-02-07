@@ -50,9 +50,9 @@ section.about {
                 color: white;
 
                 h1 {
-                    font-size: 2em;
+                    font-size: 3em;
                     margin: 0;
-                    // font-weight: 400;
+                    font-weight: 400;
                 }
 
                 p {
@@ -127,6 +127,17 @@ section.about {
             min-height: 300px;
             border: 2px solid red;
             margin-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+
+            .canada,
+            .australia,
+            .uk {
+                width: 100%;
+                max-width: calc(100% / 3.2);
+                border: 1px solid red;
+            }
+
         }
 
     }
