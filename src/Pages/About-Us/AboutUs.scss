@@ -192,6 +192,33 @@ section.about {
 @media screen and (max-width: 1200px) {
     
     section.about {
+    
+        .about-container {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    section.about {
+
+        .pattern-leaf {
+            z-index: 1;
+            display: none;
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    section.about {
         width: 100%;
         min-height: 600px;
         position: relative;
@@ -209,7 +236,6 @@ section.about {
             max-width: 1100px;
             min-height: inherit;
             margin: auto;
-            // z-index: 3;
     
             .intro {
                 width: 100%;
@@ -217,48 +243,39 @@ section.about {
                 display: flex;
                 border-radius: 15px;
                 overflow: hidden;
-                // border: 2px solid yellowgreen;
                 position: relative;
                 z-index: 5;
+                flex-direction: column-reverse;
     
                 .bg-pattern {
                     position: absolute;
-                    // top: -50%;
                     bottom: 0;
                     left: 0;
                     transform: rotate(45deg);
                 }
     
                 .text-intro {
-                    width: 52%;
-                    min-height: inherit;
-                    background-color: $peach;
-                    display: flex;
+                    width: 100%;
+                    min-height: 320px;
                     flex-direction: column;
-                    justify-content: center;
-                    padding: 0 80px;
-                    color: white;
-    
-                    h1 {
-                        font-size: 2em;
-                        margin: 0;
-                        // font-weight: 400;
-                    }
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 20px;
+                    box-sizing: border-box;
     
                     p {
-                        max-width: 450px;
+                        width: 100%;
+                        max-width: 600px;
+                        box-sizing: border-box;
+                        text-align: center;
                     }
                     
     
                 }
                 
                 .img-intro {
-                    width: 48%;
-                    min-height: inherit;
-                    background-image: url('../../../public/assets/about/desktop/image-about-hero.jpg');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    width: 100%;
+                    min-height: 320px;
                 }
     
     
@@ -317,6 +334,62 @@ section.about {
                 min-height: 300px;
                 // border: 2px solid red;
                 margin-bottom: 100px;
+                display: flex;
+                justify-content: space-between;
+    
+                .canada,
+                .australia,
+                .uk {
+                    width: 100%;
+                    max-width: calc(100% / 3.2);
+    
+                    .location-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .location-illustration {
+                            display: flex;
+                            justify-content: center;
+    
+                            .img-pattern {
+                                position: absolute;
+                            }
+                        }
+    
+                        .location-contents {
+                            margin-top: 30px;
+                            text-align: center;
+    
+                            h1 {
+                                margin-bottom: 40px;
+                                font-size: 1.5em;
+                                font-weight: normal;
+                            }
+    
+    
+                            a {
+                                width: 100%;
+                                max-width: 152px;
+                                text-align: center;
+                                padding: 15px;
+                                border-radius: 7px;
+                                background-color: $peach;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: $white;
+                                font-weight: 600;
+                                font-size: .9em;
+                                transition: .2s ease-in-out;
+                                z-index: 9;
+                            }
+    
+                        }
+                    }
+    
+                }
+    
             }
     
         }
