@@ -317,3 +317,61 @@ section.about {
     }
 
 }
+
+@media screen and (max-width: 480px) {
+
+    section.about {
+        // border: 3px solid sandybrown;
+    
+        .about-container {
+            padding: 0;
+    
+            .intro {
+                border-radius: 0;
+                
+    
+                .text-intro {
+                    min-height: 520px;
+
+                    p {
+                        // border: 3px solid blue;
+                        line-height: 2em !important;
+                    }
+
+                }
+                
+                .img-intro {}
+    
+    
+            }
+    
+            .world-class-talent {
+    
+    
+                .section-img {}
+    
+                .section-text {}
+    
+            }
+    
+            .locations {
+                margin: 150px 0 !important;
+
+                .canada,
+                .australia {}
+    
+                .canada,
+                .australia,
+                .uk {
+    
+                    .location-wrapper {}
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+
+}

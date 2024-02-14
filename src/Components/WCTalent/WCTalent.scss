@@ -94,3 +94,25 @@ section.world-class-talent {
     }
 
 }
+
+@media screen and (max-width: 480px) {
+
+    section.world-class-talent {
+        margin-top: 0 !important;
+        border-radius: 0 !important;
+    
+        .section-img {}
+    
+        .section-text {
+            min-height: 600px;
+
+            p {
+                line-height: 2em;
+            }
+    
+        }
+    
+    }
+
+
+}
