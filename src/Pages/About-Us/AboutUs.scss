@@ -224,35 +224,13 @@ section.about {
         position: relative;
     
         .pattern-leaf {
-            position: absolute;
-            left: 0;
-            top: 20%;
-            z-index: 1;
             display: none;
         }
     
         .about-container {
-            width: 100%;
-            max-width: 1100px;
-            min-height: inherit;
-            margin: auto;
     
             .intro {
-                width: 100%;
-                min-height: 480px;
-                display: flex;
-                border-radius: 15px;
-                overflow: hidden;
-                position: relative;
-                z-index: 5;
                 flex-direction: column-reverse;
-    
-                .bg-pattern {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    transform: rotate(45deg);
-                }
     
                 .text-intro {
                     width: 100%;
@@ -262,15 +240,6 @@ section.about {
                     text-align: center;
                     padding: 0 20px;
                     box-sizing: border-box;
-    
-                    p {
-                        width: 100%;
-                        max-width: 600px;
-                        box-sizing: border-box;
-                        text-align: center;
-                    }
-                    
-    
                 }
                 
                 .img-intro {
@@ -307,24 +276,9 @@ section.about {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    // align-items: center;
-                    background-color: $light-grey;
                     background-color: #FEF3F0;
                     padding: 0 100px;
                     text-align: left;
-                    // border: 1px solid red;
-    
-                    h1 {
-                        color: $peach;
-                        margin: 0 0 20px 0;
-                        font-size: 2em;
-                    }
-    
-                    p {
-                        margin: 0;
-                        max-width: 450px;
-                    }
-    
                 }
     
             }
@@ -332,60 +286,26 @@ section.about {
             .locations {
                 width: 100%;
                 min-height: 300px;
-                // border: 2px solid red;
                 margin-bottom: 100px;
                 display: flex;
                 justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+
+                .canada,
+                .australia {
+                    margin-bottom: 100px;
+                }
     
                 .canada,
                 .australia,
                 .uk {
-                    width: 100%;
-                    max-width: calc(100% / 3.2);
+                    max-width: 100%;
     
                     .location-wrapper {
-                        display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-    
-                        .location-illustration {
-                            display: flex;
-                            justify-content: center;
-    
-                            .img-pattern {
-                                position: absolute;
-                            }
-                        }
-    
-                        .location-contents {
-                            margin-top: 30px;
-                            text-align: center;
-    
-                            h1 {
-                                margin-bottom: 40px;
-                                font-size: 1.5em;
-                                font-weight: normal;
-                            }
-    
-    
-                            a {
-                                width: 100%;
-                                max-width: 152px;
-                                text-align: center;
-                                padding: 15px;
-                                border-radius: 7px;
-                                background-color: $peach;
-                                text-decoration: none;
-                                text-transform: uppercase;
-                                color: $white;
-                                font-weight: 600;
-                                font-size: .9em;
-                                transition: .2s ease-in-out;
-                                z-index: 9;
-                            }
-    
-                        }
                     }
     
                 }
