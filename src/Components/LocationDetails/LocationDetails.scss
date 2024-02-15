@@ -1,0 +1,84 @@
+@import '/src/Components/Utilities/utilities';
+
+section.location-details {
+    width: 100%;
+    min-height: 600px;
+    border: 2px solid orange;
+    margin-bottom: 200px;
+
+    .details-container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        // border: 2px solid saddlebrown;
+        min-height: inherit;
+
+        .details-wrapper {
+            width: 100%;
+            min-height: 326px;
+            // border: 2px solid blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+            .details-contents {
+                width: 100%;
+                // max-width: 68%;
+                min-height: inherit;
+                border-radius: 10px;
+                // border: 3px solid blue;
+                flex: 2;
+                background-color: #FDF3F0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 100px;
+
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                h1, h3 {
+                    margin: 0;
+                }
+
+                h1 {
+                    font-size: 2.5em;
+                    color: $peach;
+                }
+
+                .contents-wrapper {
+                    display: flex;
+                    margin-top: 20px;
+                    // border: 2px solid salmon;
+
+                    .office-location {
+                        margin-right: 50px;
+                    }
+
+                }
+
+            }
+            
+            .details-map {
+                width: 100%;
+                // max-width: 28%;
+                min-height: inherit;
+                border-radius: 10px;
+                border: 3px solid blue;
+                flex: 1;
+            }
+
+        }
+
+    }
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
