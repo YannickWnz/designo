@@ -30,7 +30,7 @@ export const AboutUs = () => {
                             </div>
                             <div className="location-contents">
                                 <h1>CANADA</h1>
-                                <Link to="/">SEE LOCATION</Link>
+                                <Link to="/locations">SEE LOCATION</Link>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ export const AboutUs = () => {
                             </div>
                             <div className="location-contents">
                                 <h1>AUSTRALIA</h1>
-                                <Link to='#'>SEE LOCATION</Link>
+                                <Link to='/locations'>SEE LOCATION</Link>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ export const AboutUs = () => {
                             </div>
                             <div className="location-contents">
                                 <h1>UNITED KINGDOM</h1>
-                                <Link to='#'>SEE LOCATION</Link>
+                                <Link to='/locations'>SEE LOCATION</Link>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,6 @@ import './WCTalent.scss'
 export const WCTalent = ({title, textContent1, textContent2, reversed, imgPath}) => {
 
     return (
-        // <section className="world-class-talent"  >
         <section className={` world-class-talent ${reversed ? 'reverse-section' : ''} `}  >
             <div 
             className="section-img"

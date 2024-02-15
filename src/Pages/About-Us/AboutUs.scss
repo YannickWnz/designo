@@ -27,13 +27,11 @@ section.about {
             display: flex;
             border-radius: 15px;
             overflow: hidden;
-            // border: 2px solid yellowgreen;
             position: relative;
             z-index: 5;
 
             .bg-pattern {
                 position: absolute;
-                // top: -50%;
                 bottom: 0;
                 left: 0;
                 transform: rotate(45deg);
@@ -100,12 +98,9 @@ section.about {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                // align-items: center;
-                background-color: $light-grey;
                 background-color: #FEF3F0;
                 padding: 0 100px;
                 text-align: left;
-                // border: 1px solid red;
 
                 h1 {
                     color: $peach;
@@ -125,7 +120,6 @@ section.about {
         .locations {
             width: 100%;
             min-height: 300px;
-            // border: 2px solid red;
             margin-bottom: 100px;
             display: flex;
             justify-content: space-between;
@@ -321,7 +315,6 @@ section.about {
 @media screen and (max-width: 480px) {
 
     section.about {
-        // border: 3px solid sandybrown;
     
         .about-container {
             padding: 0;
@@ -334,7 +327,6 @@ section.about {
                     min-height: 520px;
 
                     p {
-                        // border: 3px solid blue;
                         line-height: 2em !important;
                     }
 
