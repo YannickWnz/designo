@@ -5,7 +5,7 @@ export const LocationDetails = ({country, addressOne, addressTwo, phone, email, 
         <section className="location-details">
             <div className="details-container">
                 {/* <div className="details-wrapper"> */}
-                <div className={` details-wrapper ${reversed ? 'reverse' : ''} `}>
+                <div className={` details-wrapper ${reversed ? 'reverse cl-reverse' : ''} `}>
                     <div className="details-contents">
                         <img src="../assets/shared/desktop/bg-pattern-two-circles.svg" alt="" />
                         {/* <h1>Canada</h1> */}
