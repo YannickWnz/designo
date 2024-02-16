@@ -10,7 +10,7 @@ section.location-details {
         width: 100%;
         max-width: 1100px;
         margin: 0 auto;
-        // border: 2px solid saddlebrown;
+        // border: 5px solid slateblue;
         min-height: inherit;
 
         .details-wrapper {
@@ -91,4 +91,120 @@ section.location-details {
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1024px) {
+
+    section.location-details {
+    
+        .details-container {
+    
+            .details-wrapper {
+    
+                .details-contents {
+
+
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
+            
+    
+            }
+    
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    section.location-details {
+        width: 100%;
+        min-height: 100px;
+        // border: 2px solid orange;
+        margin-bottom: 30px;
+    
+        .details-container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            // border: 2px solid saddlebrown;
+            min-height: inherit;
+            // position: relative;
+            
+
+            .details-wrapper {
+                width: 100%;
+                min-height: 326px;
+                border: 4px solid seagreen;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                flex-direction: column;
+                // padding: 0 20px;
+                // box-sizing: border-box;
+    
+                .details-contents {
+                    width: 100%;
+                    max-width: 100%;
+                    // max-width: 300px;
+                    min-height: inherit;
+                    border: 3px solid crimson;
+                    flex: 1;
+                    background-color: #FDF3F0;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 100px;
+    
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+    
+                    .contents-wrapper {
+                        display: flex;
+                        margin-top: 20px;
+                        border: 2px solid salmon;
+    
+                        .office-location {
+                            margin-right: 50px;
+                        }
+    
+                    }
+    
+                }
+                
+                .details-map {
+                    width: 100%;
+                    min-height: inherit;
+                    max-width: 100%;
+                    min-height: inherit;
+                    border-radius: 10px;
+                    border: 3px solid blue;
+                    // flex: 1;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        height: 326px;
+                        min-height: inherit;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+
 }

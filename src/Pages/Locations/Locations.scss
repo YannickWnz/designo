@@ -4,3 +4,12 @@
     // border: 2px solid salmon;
     margin-bottom: 200px;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .locations {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+}
