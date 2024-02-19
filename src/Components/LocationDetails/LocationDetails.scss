@@ -16,7 +16,6 @@ section.location-details {
         .details-wrapper {
             width: 100%;
             min-height: 326px;
-            // border: 2px solid blue;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -24,10 +23,8 @@ section.location-details {
 
             .details-contents {
                 width: 100%;
-                // max-width: 68%;
                 min-height: inherit;
                 border-radius: 10px;
-                // border: 3px solid blue;
                 flex: 2;
                 background-color: #FDF3F0;
                 position: relative;
@@ -54,7 +51,6 @@ section.location-details {
                 .contents-wrapper {
                     display: flex;
                     margin-top: 20px;
-                    // border: 2px solid salmon;
 
                     .office-location {
                         margin-right: 50px;
@@ -67,10 +63,7 @@ section.location-details {
             .details-map {
                 width: 100%;
                 min-height: inherit;
-                // max-width: 28%;
-                min-height: inherit;
                 border-radius: 10px;
-                // border: 3px solid blue;
                 flex: 1;
 
                 img {
@@ -95,7 +88,7 @@ section.location-details {
 
 .cl-reverse {
     // flex-direction: column-reverse;
-    margin: 120px 0;
+    // margin: 120px 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -129,12 +122,8 @@ section.location-details {
     section.location-details {
     
         .details-container {
-            margin: 0 auto;
-            min-height: inherit;
-            
 
             .details-wrapper {
-                width: 100%;
                 min-height: 326px;
                 gap: 30px;
                 flex-direction: column-reverse;
@@ -142,7 +131,6 @@ section.location-details {
                 .details-contents {
                     flex: 1;
                     box-sizing: border-box;
-    
                 }
                 
                 .details-map {
@@ -167,7 +155,48 @@ section.location-details {
 
 @media screen and (max-width: 480px) {
 
+    section.location-details {
     
+        .details-container {
+
+            .details-wrapper {
+                min-height: 326px;
+                gap: 0;
+                flex-direction: column-reverse;
+                // display: block;
+
+                .details-contents {
+                    flex: 1;
+                    box-sizing: border-box;
+                    border-radius: 0;
+
+                    h1 {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                }
+                
+                .details-map {
+                    border-radius: 0;
+                    margin: 0;
+                    flex: 0;
+                    min-height: 400px;
+    
+                    img {
+                        height: 326px;
+                        margin: 0;
+                        border-radius: 0;
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+
 
 }
 
