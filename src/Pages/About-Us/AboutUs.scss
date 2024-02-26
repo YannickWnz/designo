@@ -322,6 +322,16 @@ section.about {
             .intro {
                 border-radius: 0;
                 
+
+                .bg-pattern {
+                    width: 400px;
+                    height: 400px;
+                    // border: 3px solid forestgreen;
+                    top: 15%;
+                    right: 0;
+                    left: initial;
+                    right: 0;
+                }
     
                 .text-intro {
                     min-height: 520px;
