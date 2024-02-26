@@ -65,11 +65,13 @@ section.location-details {
                 min-height: inherit;
                 border-radius: 10px;
                 flex: 1;
+                
 
                 img {
                     width: 100%;
                     height: 100%;
                     min-height: inherit;
+                    // height: 300px;
                     object-fit: cover;
                     border-radius: 10px;
                 }
@@ -163,16 +165,31 @@ section.location-details {
                 min-height: 326px;
                 gap: 0;
                 flex-direction: column-reverse;
-                // display: block;
 
                 .details-contents {
-                    flex: 1;
+                    flex: 0;
                     box-sizing: border-box;
                     border-radius: 0;
 
                     h1 {
-                        margin: 0;
+                        margin: 80px 0 0 0;
                         padding: 0;
+                        text-align: center;
+                    }
+
+                    .contents-wrapper {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+
+                        .office-location {
+                            margin: 0 0 50px 0;
+                        }
+
+                        .contact {
+                            margin-bottom: 80px;
+                        }
+
                     }
 
                 }
@@ -182,10 +199,12 @@ section.location-details {
                     margin: 0;
                     flex: 0;
                     min-height: 400px;
+                    padding: 0 !important;
     
                     img {
                         height: 326px;
                         margin: 0;
+                        padding: 0;
                         border-radius: 0;
                     }
     
