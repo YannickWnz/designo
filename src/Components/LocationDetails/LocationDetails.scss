@@ -132,6 +132,11 @@ section.location-details {
                 .details-contents {
                     flex: 1;
                     box-sizing: border-box;
+
+                    img {
+                        display: none;
+                    }
+
                 }
                 
                 .details-map {
