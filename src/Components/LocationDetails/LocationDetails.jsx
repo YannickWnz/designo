@@ -1,6 +1,12 @@
 import './LocationDetails.scss'
 
 export const LocationDetails = ({country, addressOne, addressTwo, phone, email, reversed, mapImg }) => {
+
+    var w = window.innerWidth;
+
+    console.log(w)
+
+
     return (
         <section className="location-details">
             <div className="details-container">
@@ -30,9 +36,17 @@ export const LocationDetails = ({country, addressOne, addressTwo, phone, email, 
                             </div>
                         </div>
                     </div>
-                    <div className="details-map">
+                    <div 
+                        className="details-map"
+                        style={{
+                            backgroundImage: `url("${mapImg}")`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
                         {/* <img src="../assets/locations/desktop/image-map-canada.png" alt="" /> */}
-                        <img src={mapImg} alt="" />
+                        {/* <img src={mapImg} alt="" /> */}
                     </div>
                 </div>
             </div>

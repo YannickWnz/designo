@@ -199,12 +199,19 @@ section.location-details {
                     flex: 0;
                     min-height: 400px;
                     padding: 0 !important;
+                    // border: 5px solid red;
+                    // background-color: seagreen;
+                    // background-image: url('../../../public/assets/locations/tablet/image-map-canada.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
     
                     img {
                         height: 326px;
                         margin: 0;
                         padding: 0;
                         border-radius: 0;
+                        border: 0;
                     }
     
                 }
