@@ -2,7 +2,7 @@ import './Contact.scss'
 
 export const Contact = () => {
     return (
-        <div className="contact">
+        <div className="contact-section">
             <div className="contact-container">
                 <div className="intro">
                     <img src="../assets/about/desktop/bg-pattern-hero-about-desktop.svg" className='bg-pattern' alt="" />
