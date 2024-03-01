@@ -6,6 +6,15 @@
     width: 100%;
     min-height: 700px;
     // border: 1px solid sandybrown;
+    position: relative;
+
+    .pattern-leaf { 
+        position: absolute;
+        right: 0;
+        bottom: -350px;
+        // border: 2px solid red;
+        z-index: 1;
+    }
 
     .contact-container {
         width: 100%;
@@ -23,8 +32,9 @@
             position: relative;
             z-index: 5;
             background-color: $peach;
-            padding: 50px;
+            padding: 20px 50px;
             box-sizing: border-box;
+            // margin-bottom: 200px;
 
             .bg-pattern {
                 position: absolute;
@@ -115,6 +125,71 @@
 
             }
 
+
+        }
+
+        .locations {
+            width: 100%;
+            min-height: 300px;
+            margin-bottom: 100px;
+            margin: 150px 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 5 !important;
+            
+            .canada,
+            .australia,
+            .uk {
+                width: 100%;
+                max-width: calc(100% / 3.2);
+                z-index: 5 !important;
+
+                .location-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .location-illustration {
+                        display: flex;
+                        justify-content: center;
+
+                        .img-pattern {
+                            position: absolute;
+                        }
+                    }
+
+                    .location-contents {
+                        margin-top: 30px;
+                        text-align: center;
+
+                        h1 {
+                            margin-bottom: 40px;
+                            font-size: 1.5em;
+                            font-weight: normal;
+                        }
+
+
+                        a {
+                            width: 100%;
+                            max-width: 152px;
+                            text-align: center;
+                            padding: 15px;
+                            border-radius: 7px;
+                            background-color: $peach;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $white;
+                            font-weight: 600;
+                            font-size: .9em;
+                            transition: .2s ease-in-out;
+                            z-index: 9;
+                        }
+
+                    }
+                }
+
+            }
 
         }
 

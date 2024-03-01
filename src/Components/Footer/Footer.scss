@@ -7,8 +7,9 @@ footer {
     background-color: $black;
     margin-top: 450px;
     margin-top: 50px;
-    z-index: 2;
-
+    z-index: 5 !important;
+    position: relative;
+    
     .footer-container {
         width: 100%;
         max-width: 1100px;

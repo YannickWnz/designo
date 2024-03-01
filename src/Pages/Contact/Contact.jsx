@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Contact.scss'
 
@@ -29,6 +30,7 @@ export const Contact = () => {
 
     return (
         <div className="contact-section">
+            <img src="../assets/shared/desktop/bg-pattern-leaf.svg" className='pattern-leaf' alt="" />
             <div className="contact-container">
                 <div className="intro">
                     <img src="../assets/about/desktop/bg-pattern-hero-about-desktop.svg" className='bg-pattern' alt="" />
@@ -51,6 +53,44 @@ export const Contact = () => {
                                 <input type="submit" value='SUBMIT' />
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div className="locations">
+                    <div className="canada">
+                        <div className="location-wrapper">
+                            <div className="location-illustration">
+                                <img src="../assets/shared/desktop/bg-pattern-small-circle.svg" className='img-pattern' alt="" />
+                                <img src="../assets/shared/desktop/illustration-canada.svg" alt="" />
+                            </div>
+                            <div className="location-contents">
+                                <h1>CANADA</h1>
+                                <Link to="/locations">SEE LOCATION</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="australia">
+                        <div className="location-wrapper">
+                            <div className="location-illustration">
+                                <img src="../assets/shared/desktop/bg-pattern-small-circle.svg" className='img-pattern' alt="" />
+                                <img src="../assets/shared/desktop/illustration-australia.svg" alt="" />
+                            </div>
+                            <div className="location-contents">
+                                <h1>AUSTRALIA</h1>
+                                <Link to='/locations'>SEE LOCATION</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="uk">
+                        <div className="location-wrapper">
+                            <div className="location-illustration">
+                                <img src="../assets/shared/desktop/bg-pattern-small-circle.svg" className='img-pattern' alt="" />
+                                <img src="../assets/shared/desktop/illustration-united-kingdom.svg" alt="" />
+                            </div>
+                            <div className="location-contents">
+                                <h1>UNITED KINGDOM</h1>
+                                <Link to='/locations'>SEE LOCATION</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
