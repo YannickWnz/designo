@@ -53,10 +53,10 @@ function App() {
         <Cta />
         }
 
-        { window.location.pathname !== '/contact' 
+        {/* { window.location.pathname !== '/contact' 
         && 
+      } */}
         <Footer />
-        }
 
         {/* <div className="test"></div> */}
 
